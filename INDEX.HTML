@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz + Jokes + Weather App</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<header>
+    <h1>Responsive Interactive Web App</h1>
+    <p>Quiz | Jokes API | Weather API</p>
+</header>
+
+<div class="container">
+
+    <!-- Social Quiz -->
+    <div class="box">
+        <h2>Social Awareness Quiz</h2>
+        <div id="quizContainer">
+            <div class="quiz-question" id="quizQuestion"></div>
+            <div class="quiz-options" id="quizOptions"></div>
+            <div id="quizResult"></div>
+        </div>
+    </div>
+
+    <!-- Joke API -->
+    <div class="box joke-box">
+        <h2>Random Joke</h2>
+        <p id="jokeText">Click below to get a random joke!</p>
+        <button onclick="getJoke()">Get Joke</button>
+    </div>
+
+    <!-- Weather API -->
+    <div class="box weather">
+        <h2>Weather Info</h2>
+        <input type="text" id="city" placeholder="Enter city name">
+        <button onclick="getWeather()">Get Weather</button>
+        <div id="weatherResult"></div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
